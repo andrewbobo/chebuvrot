@@ -1,0 +1,146 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  text-align: center;
+}
+
+.logo{
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.graf{
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+header h4{
+  position: relative;
+  transition: all 1s;
+  margin-right: 30px;
+}
+
+header h4:hover{
+  padding-top: 50px;
+  border-radius: 100px;
+  background: blue;
+  color: white;
+  transition: all 1s;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+header h4:hover:after{
+  position: absolute;
+  top: -180px;
+  left: 50%;
+  content: "";
+  font-size: 36px;
+  color: red;
+  transition: all 1s;
+  width: 100px;
+  height: 200px;
+  display: block;
+  z-index: 111;
+  background: blue;
+  left: 50%;
+  margin-left: -50px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.cont{
+  position: relative;
+}
+
+canvas{
+    background-color: #27ae61;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+
+}
+
+#bg_popup{
+background-color: rgba(0, 0, 0, 0.8);
+display: none;
+position: fixed;
+z-index: 99999;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+}
+
+#popup {
+background: #fff;
+width: 520px;
+margin: 5% auto;
+padding: 5px 20px 13px 20px;
+border: 2px solid #1BA600;
+position: relative;
+-webkit-box-shadow: 0px 0px 20px #000;
+-moz-box-shadow: 0px 0px 20px #000;
+box-shadow: 0px 0px 20px #000;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+}
+
+.close{
+display:block;
+position:absolute;
+top:-12px;
+right:5px;
+width:25px;
+height:25px;
+line-height:28px;
+color:#fff;
+background:#1BA600;
+cursor:pointer;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+-ms-border-radius: 15px;
+-o-border-radius: 15px;
+border-radius: 15px;
+-moz-box-shadow: 1px 1px 3px #000;
+-webkit-box-shadow: 1px 1px 3px #000;
+box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+background-color:#f30;
+}
+
+#app
+{
+	width: 100%;
+	height: 100%;
+  width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+embed{
+  visibility: hidden;
+}
